@@ -16,7 +16,7 @@
          PRODUCT SETTINGS
       ======================================================= */
 
-      const PRICE = 710;
+      const PRICE = 701;
 
       const MIN_QUANTITY = 1;
 
