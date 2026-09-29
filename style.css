@@ -163,11 +163,6 @@ body {
   min-height: 85vh;
   display: flex;
   align-items: center;
-   background-image: url("assets/images/huzur-ring.jpg");
-   background-size: cover;
-   background-repeat: no-repeat;
-   /* Desktop-এ huzur + ring visible রাখবে */
-   background-position: 72% center;
 }
 
 .hero-section::before {
@@ -177,20 +172,8 @@ body {
   left: -50%;
   width: 200%;
   height: 200%;
-  background:
-        linear-gradient(
-            90deg,
-            rgba(12, 4, 22, 0.94) 0%,
-            rgba(12, 4, 22, 0.86) 35%,
-            rgba(12, 4, 22, 0.62) 62%,
-            rgba(12, 4, 22, 0.35) 100%
-        );
+  background: radial-gradient(ellipse at center, rgba(200, 160, 74, 0.08) 0%, transparent 60%);
   animation: pulse 4s ease-in-out infinite;
-}
-
-.hero-overlay .container {
-    position: relative;
-    z-index: 2;
 }
 
 @keyframes pulse {
@@ -206,9 +189,7 @@ body {
 }
 
 .min-vh-hero {
-   min-height: 720px;
-   display: flex;
-   align-items: center;
+  min-height: 75vh;
 }
 
 .hero-badge {
@@ -2184,40 +2165,6 @@ body.offer-modal-open {
     justify-self: end;
     grid-row: 1;
   }
-}
-
-
-@media (max-width: 768px) {
-
-    .hero-section {
-        min-height: 720px;
-
-        /* Mobile-এ huzur-কে ডানদিকে রেখে text-এর জন্য জায়গা */
-        background-position: 68% top;
-    }
-
-    .hero-overlay {
-        min-height: 720px;
-
-        background:
-            linear-gradient(
-                180deg,
-                rgba(12, 4, 22, 0.48) 0%,
-                rgba(12, 4, 22, 0.68) 28%,
-                rgba(12, 4, 22, 0.90) 58%,
-                rgba(12, 4, 22, 0.97) 100%
-            );
-    }
-
-    .min-vh-hero {
-        min-height: 720px;
-        align-items: flex-end;
-    }
-
-    .hero-overlay .container {
-        padding-left: 14px;
-        padding-right: 14px;
-    }
 }
 
 
